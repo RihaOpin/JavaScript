@@ -1,16 +1,19 @@
+const numberOfFilms = prompt('How much movies you already done?', '');
 
-console.log(4 +  '5')
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
+};
 
-let incr = 10,
-    decr = 10;
+const a = prompt('One of last viewed movie?', ''),
+      b = prompt('How good it was?', ''),
+      c = prompt('One of last viewed movie?', ''),
+      d = prompt('How good it was?', '')
 
-console.log(++incr);
-console.log(--incr);
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
 
-console.log(5%2)
-console.log(2*4 === '8')
-
-const isChecked = false,
-isClose = false;
-
-console.log(isChecked || !isClose)
+console.log(personalMovieDB)
